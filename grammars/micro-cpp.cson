@@ -1,0 +1,31 @@
+'scopeName': 'source.upp'
+'name': 'Micro C++'
+'fileTypes': [
+  '.U',
+  '.uu',
+  '.upp',
+  '.uh',
+  '.cc',
+  '.cpp',
+  '.C',
+  '.h',
+  '.hpp',
+  '.hh'
+]
+'patterns': [
+  {
+    'match': '\\b_(Enable|Disable|Throw|Resume|CatchResume|At|Finally|When|Accept|Select|Timeout)\\b',
+    'name': 'keyword.control.cpp'
+  },
+  {
+    'match': '\\b_(Event|Coroutine|Task|PeriodicTask|RealTimeTask|SporadicTask|Monitor|Cormonitor)\\b',
+    'name': 'storage.type.cpp'
+  },
+  {
+    'match': '\\b_(Nomutex|Mutex)\\b',
+    'name': 'storage.modifier.cpp'
+  },
+  {
+    'include': 'source.cpp'
+  }
+]
