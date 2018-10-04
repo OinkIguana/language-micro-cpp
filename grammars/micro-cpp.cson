@@ -18,6 +18,10 @@
     'name': 'keyword.control.cpp'
   },
   {
+    'match': '\\b(COBEGIN|BEGIN|END|COEND)\\b',
+    'name': 'keyword.control.cpp'
+  },
+  {
     'match': '\\b_(Event|Coroutine|Task|PeriodicTask|RealTimeTask|SporadicTask|Monitor|Cormonitor)\\b',
     'name': 'storage.type.cpp'
   },

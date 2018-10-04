@@ -7,12 +7,16 @@
       |^ \\s* (public|private|protected): \\s* $
       |^ \\s* @(public|private|protected) \\s* $
       |^ \\s* \\{ \\} $
+      |^ \\s* COBEGIN (?!.*COEND.*) $
+      |^ \\s* BEGIN (?!.*END.*) $
       '
     'decreaseIndentPattern': '(?x)
        ^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\}
       |^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\)
       |^ \\s* (public|private|protected): \\s* $
       |^ \\s* @(public|private|protected) \\s* $
+      |^ \\s* COEND $
+      |^ \\s* END $
       '
 '.source.upp':
   'editor':
